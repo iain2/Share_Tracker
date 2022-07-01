@@ -12,7 +12,7 @@ const PortfolioContainer = () => {
     return (
         <>
             <h1>PortfolioContainer</h1>
-            <NavBar />
+
             <UserPortfolio />
 
         </>

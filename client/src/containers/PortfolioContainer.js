@@ -1,0 +1,19 @@
+import React from "react";
+import NavBar from "../components/NavBar";
+import UserPortfolio from "../components/UserPortfolio";
+
+const PortfolioContainer = () => {
+
+
+    return (
+        <>
+            <h1>PortfolioContainer</h1>
+            <NavBar />
+            <UserPortfolio />
+
+        </>
+    )
+};
+
+
+export default PortfolioContainer

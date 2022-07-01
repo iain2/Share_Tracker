@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React, { useState, useEffect } from "react";
+import PortfolioContainer from './containers/PortfolioContainer';
+import NavBar from './components/NavBar';
+import SharesContainer from './containers/SharesContainer';
+import { getPortfolio } from './PortfolioService'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 function App() {
+
+
+  const [portfolio, setPortfolio] = useState([]);
+
+  useEffect(() => {
+    getPortfolio().then((allStocks) => {
+      setPortfolio(allStocks);
+    })
+  });
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar />
+      <Routes>
+
+        <Route exact path="/" element={< PortfolioContainer portfolio={portfolio} />} />
+        <Route path="/shares" element={< SharesContainer />} />
+      </Routes>
+    </Router>
   );
 }
 

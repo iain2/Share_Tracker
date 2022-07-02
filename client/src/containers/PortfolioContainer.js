@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 import UserPortfolio from "../components/UserPortfolio";
 
 
-const PortfolioContainer = () => {
+const PortfolioContainer = ({ portfolio, getSymbol }) => {
 
 
 
@@ -11,9 +11,9 @@ const PortfolioContainer = () => {
 
     return (
         <>
-            <h1>PortfolioContainer</h1>
 
-            <UserPortfolio />
+
+            <UserPortfolio portfolio={portfolio} getSymbol={getSymbol} />
 
         </>
     )

@@ -8,13 +8,13 @@ import ShareChart from "./ShareChart";
 
 
 
-const UserPortfolio = () => {
+const UserPortfolio = ({ portfolio, getSymbol }) => {
 
 
     return (
         <>
             <h2>UserPortfolio</h2>
-            <ShareList />
+            <ShareList portfolio={portfolio} getSymbol={getSymbol} />
             <TotalValue />
             <ShareChart />
         </>

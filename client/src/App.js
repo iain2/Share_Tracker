@@ -19,6 +19,8 @@ function App() {
   const [portfolio, setPortfolio] = useState([]);
   const [stockSymbol, setStockSymbol] = useState('AAPL');
   const [stock, setStock] = useState(dummyData);
+  const [searchStock, setSearchStock] = useState('aapl');
+  const [searchedStockList, setSearchedStockList] = useState([])
 
   const getStock = () => {
     return
@@ -30,11 +32,19 @@ function App() {
     });
     fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${stockSymbol}&interval=5min&apikey=IOETLV12N9IIMNFD`)
       .then(res => res.json())
-      .then(data => setStock(data))
-  }, [stockSymbol])
+      .then(data => setStock(data));
+    fetch(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${searchStock}&apikey=IOETLV12N9IIMNFD`)
+      .then(res => res.json())
+      .then(data => setSearchedStockList(data.bestMatches))
+
+  }, [stockSymbol, searchStock])
 
   const getSymbol = (symbol) => {
     setStockSymbol(symbol)
+  }
+
+  const searchSymbol = (symbol) => {
+    setSearchStock(symbol)
   }
 
 
@@ -43,14 +53,14 @@ function App() {
     <Router>
       <NavBar />
       <Routes>
+
         <Route exact path="/" element={<Home/>} />
         <Route exact path="/user" element={< PortfolioContainer portfolio={portfolio} getSymbol={getSymbol} stock={stock} />} />
-        <Route path="/shares" element={< SharesContainer />} />
+        <Route path="/shares" element={< SharesContainer searchSymbol={searchSymbol} searchedStockList={searchedStockList} />} />
+
       </Routes>
     </Router>
-    // <div className="App">
-    // <Chart stock={stock}/>
-    // </div>
+   
   );
 }
 

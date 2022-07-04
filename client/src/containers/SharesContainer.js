@@ -1,7 +1,8 @@
 import React from "react";
+import SearchBar from "../components/SearchBar";
+import SearchResultsList from "../components/SearchResultsList";
 
-
-const SharesContainer = () => {
+const SharesContainer = ({ searchSymbol, searchedStockList }) => {
 
 
 
@@ -9,7 +10,8 @@ const SharesContainer = () => {
 
     return (
         <>
-            <h1>SharesContainer</h1>
+            <SearchBar searchSymbol={searchSymbol} />
+            <SearchResultsList searchedStockList={searchedStockList} />
 
 
 

@@ -39,16 +39,16 @@ function App() {
 
 
   return (
-    // <Router>
-    //   <NavBar />
-    //   <Routes>
-    //     <Route exact path="/" element={< PortfolioContainer portfolio={portfolio} getSymbol={getSymbol} stock={stock} />} />
-    //     <Route path="/shares" element={< SharesContainer />} />
-    //   </Routes>
-    // </Router>
-    <div className="App">
-    <Chart stock={stock}/>
-    </div>
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element={< PortfolioContainer portfolio={portfolio} getSymbol={getSymbol} stock={stock} />} />
+        <Route path="/shares" element={< SharesContainer />} />
+      </Routes>
+    </Router>
+    // <div className="App">
+    // <Chart stock={stock}/>
+    // </div>
   );
 }
 

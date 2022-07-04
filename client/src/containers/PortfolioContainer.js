@@ -12,7 +12,7 @@ const PortfolioContainer = ({ portfolio, getSymbol, stock }) => {
     return (
         <>
 
-            <h1>{stock["Meta Data"]["2. Symbol"]}</h1>
+            {/* <h1>{stock["Meta Data"]["2. Symbol"]}</h1> */}
             <UserPortfolio portfolio={portfolio} getSymbol={getSymbol} />
 
         </>

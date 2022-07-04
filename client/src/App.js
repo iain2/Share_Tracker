@@ -8,6 +8,8 @@ import { data, getPortfolio } from './PortfolioService'
 import { getStock } from './StockService';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { dummyData } from './PortfolioService'
+import Chart from './components/charts'
+
 
 
 function App() {
@@ -37,13 +39,16 @@ function App() {
 
 
   return (
-    <Router>
-      <NavBar />
-      <Routes>
-        <Route exact path="/" element={< PortfolioContainer portfolio={portfolio} getSymbol={getSymbol} stock={stock} />} />
-        <Route path="/shares" element={< SharesContainer />} />
-      </Routes>
-    </Router>
+    // <Router>
+    //   <NavBar />
+    //   <Routes>
+    //     <Route exact path="/" element={< PortfolioContainer portfolio={portfolio} getSymbol={getSymbol} stock={stock} />} />
+    //     <Route path="/shares" element={< SharesContainer />} />
+    //   </Routes>
+    // </Router>
+    <div className="App">
+    <Chart stock={stock}/>
+    </div>
   );
 }
 

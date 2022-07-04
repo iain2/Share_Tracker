@@ -10,7 +10,7 @@ const SearchResultsList = ({ searchedStockList }) => {
 
     return (
         <>
-            <h1>SearchResultsList</h1>
+
             {searchResultNodes}
         </>
     )

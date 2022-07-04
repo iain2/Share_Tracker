@@ -4,7 +4,7 @@ const SearchResultItem = ({ stock }) => {
     return (
         <>
             <hr></hr>
-            <p>{stock["2. name"]}</p>
+            <p><b>{stock["2. name"]}</b></p>
             <p>{stock["1. symbol"]}</p>
             <hr></hr>
         </>

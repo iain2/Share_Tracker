@@ -3,8 +3,7 @@ import ListItem from "./ListItems";
 import styled from "styled-components";
 
 const ListColumn = styled.div`
-    display: flex;
-    flex-direction: column;
+    display: block;
 `
 
 const ShareList = ({ portfolio, getSymbol }) => {

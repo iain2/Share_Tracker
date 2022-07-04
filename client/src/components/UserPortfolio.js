@@ -4,45 +4,46 @@ import TotalValue from "./TotalValue";
 import ShareChart from "./ShareChart";
 import styled from "styled-components";
 
-const GridContainer = styled.div`    
+const GridContainer = styled.div`
     display: grid;
-    grid-template-areas: 
-    'GridList shareslist'
-    'GridChart sharechart'
-    'GridValue totalvalue'
-    ;
-    grid-template-columns: 3fr 7fr;
-    grid-template-rows: 3fr 7fr;
 `
+
 const GridList = styled.div`
-    grid-area: shareslist;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-start: 2;
 `
 
 const GridChart = styled.div`
-    grid-area: sharechart;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
 `
 
-const GridValue = styled.div`
-    grid-area: totalvalue;
+const GridTotal = styled.div`
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
 `
 
 const UserPortfolio = ({ portfolio, getSymbol }) => {
 
 
     return (
-        <>
         <GridContainer>
-            <GridList>
-                <ShareList portfolio={portfolio} getSymbol={getSymbol} />
-            </GridList>
-            <GridChart>
-                <ShareChart />
-            </GridChart>
-            <GridValue>
-                <TotalValue />
-            </GridValue>
+                <GridList>
+                    <ShareList portfolio={portfolio} getSymbol={getSymbol} />
+                </GridList>
+                <GridChart>
+                    <ShareChart />
+                </GridChart>
+                <GridTotal>
+                    <TotalValue />
+                </GridTotal>
         </GridContainer>
-        </>
     )
 };
 

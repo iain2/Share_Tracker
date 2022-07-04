@@ -1,5 +1,6 @@
 import React from "react";
 import SearchResultItem from "./SearchResultsItem";
+import styled from "styled-components";
 
 const SearchResultsList = ({ searchedStockList }) => {
 
@@ -10,7 +11,6 @@ const SearchResultsList = ({ searchedStockList }) => {
 
     return (
         <>
-
             {searchResultNodes}
         </>
     )

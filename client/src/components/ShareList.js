@@ -1,9 +1,13 @@
 import React from "react";
 import ListItem from "./ListItems";
+import styled from "styled-components";
+
+const ListColumn = styled.div`
+    display: flex;
+    flex-direction: column;
+`
 
 const ShareList = ({ portfolio, getSymbol }) => {
-
-
 
     const portfolioNodes = portfolio.map((stock) => {
         return <ListItem stock={stock} key={stock._id} getSymbol={getSymbol} />
@@ -12,12 +16,12 @@ const ShareList = ({ portfolio, getSymbol }) => {
 
     return (
 
-        <>
+        <ListColumn>
             <p>{portfolioNodes}</p>
 
 
 
-        </>
+        </ListColumn>
     )
 };
 

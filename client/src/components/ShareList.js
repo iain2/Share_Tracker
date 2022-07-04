@@ -16,7 +16,7 @@ const ShareList = ({ portfolio, getSymbol }) => {
     return (
 
         <ListColumn>
-            <p>{portfolioNodes}</p>
+            {portfolioNodes}
 
 
 

@@ -26,7 +26,7 @@ const ListItem = ({ stock, getSymbol }) => {
 
     return (
         <ListColumn>
-            <Button onClick={handleClick} value={stock.symbol}>{stock["2. name"]}</Button>
+            <Button onClick={handleClick} value={stock.symbol}>{stock["name"]}</Button>
         </ListColumn>
     );
 };

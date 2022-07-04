@@ -54,13 +54,13 @@ function App() {
       <NavBar />
       <Routes>
 
-        <Route exact path="/" element={<Home/>} />
+        <Route exact path="/" element={<Home />} />
         <Route exact path="/user" element={< PortfolioContainer portfolio={portfolio} getSymbol={getSymbol} stock={stock} />} />
         <Route path="/shares" element={< SharesContainer searchSymbol={searchSymbol} searchedStockList={searchedStockList} />} />
 
       </Routes>
     </Router>
-   
+
   );
 }
 

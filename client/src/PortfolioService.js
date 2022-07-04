@@ -31,8 +31,6 @@ export const updatePortfolio = (booking) => {
 
 }
 
-
-
 export const dummyData = {
     "Meta Data": {
         "1. Information": "Intraday (5min) open, high, low, close prices and volume",

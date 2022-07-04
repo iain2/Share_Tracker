@@ -11,7 +11,6 @@ const NavBarContainer = styled.nav`
     color: #ffffff;
     display: flex;
     flex-direction: row;
-    border: 1px solid green;
     list-style: none;
     li {
       padding: 15px 15px;

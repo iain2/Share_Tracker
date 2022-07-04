@@ -3,6 +3,19 @@ import styled from "styled-components";
 
 const ListColumn = styled.div`
     display: block;
+    padding-left: 20px;
+    padding: 5px;
+`
+
+const Button = styled.button`
+  background-color: #2E6171;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 `
 
 const ListItem = ({ stock, getSymbol }) => {
@@ -13,7 +26,7 @@ const ListItem = ({ stock, getSymbol }) => {
 
     return (
         <ListColumn>
-            <button onClick={handleClick} value={stock.symbol}>{stock.name}</button>
+            <Button onClick={handleClick} value={stock.symbol}>{stock["2. name"]}</Button>
         </ListColumn>
     );
 };

@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const NavBarContainer = styled.nav`
     color: white;
   text-align: left;
-  background: #556f7a;
+  background: #2E6171;
   width: 100%;
   ul {
     color: #ffffff;

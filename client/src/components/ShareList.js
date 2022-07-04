@@ -1,17 +1,27 @@
 import React from "react";
 import ListItem from "./ListItems";
+import styled from "styled-components";
 
-const ShareList = () => {
+const ListColumn = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+
+const ShareList = ({ portfolio, getSymbol }) => {
+
+    const portfolioNodes = portfolio.map((stock) => {
+        return <ListItem stock={stock} key={stock._id} getSymbol={getSymbol} />
+    })
+
+
     return (
 
-        <>
-            <p>ShareList</p>
+        <ListColumn>
+            <p>{portfolioNodes}</p>
 
-            <ListItem />
-            <ListItem />
-            <ListItem />
 
-        </>
+
+        </ListColumn>
     )
 };
 

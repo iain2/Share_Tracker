@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const ListItem = ({ stock, getSymbol }) => {
 
     const handleClick = (event) => {
@@ -13,6 +12,5 @@ const ListItem = ({ stock, getSymbol }) => {
         </>
     );
 };
-
 
 export default ListItem;

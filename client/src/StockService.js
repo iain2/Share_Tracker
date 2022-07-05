@@ -1,4 +1,4 @@
-const baseURL = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=AAPL&interval=5min&apikey=IOETLV12N9IIMNFD'
+const baseURL = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=AAPL&interval=5min&apikey=HJLCHFKGONF4JPE9'
 
 
 export const getStock = () => {

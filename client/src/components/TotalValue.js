@@ -11,7 +11,7 @@ const TotalValue = ({ stock }) => {
     const stockDifference = stockDay1 - stockDay2;
     const percentageDifference = ((stockDifference / stockDay1) * 100);
     const roundedPercentage = percentageDifference.toFixed(2);
-    const roundedStockPrice = stockDay1.tofixed(2);
+    // const roundedStockPrice = stockDay1.toFixed(2);
 
 
 
@@ -21,7 +21,7 @@ const TotalValue = ({ stock }) => {
     return (
         <>
             <p>Symbol: {stock["Meta Data"]["2. Symbol"]}</p>
-            <p>Value: ${roundedStockPrice}</p>
+            <p>Value: ${stockDay1}</p>
             <p>Change: {roundedPercentage}%</p>
         </>
     );

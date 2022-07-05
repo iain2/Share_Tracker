@@ -11,6 +11,7 @@ const FooterContainer = styled.footer`
   color: #ffffff;
   position: fixed;
   bottom: 0;
+  border-top: 1px solid #220c10;
 `
 
 const FooterBar = () => {

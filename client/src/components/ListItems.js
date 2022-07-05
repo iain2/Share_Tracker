@@ -3,16 +3,16 @@ import styled from "styled-components";
 
 const ListColumn = styled.div`
     display: block;
+    margin: 5px;
     margin-top: 10px;
     padding: 5px;
-    /* background-color: #2E6171; */
 `
 
 const Button = styled.button`
-  background-color: #2E6171;
+  background-color: transparent;
   border: none;
   color: white;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   text-align: center;
   text-decoration: none;
   display: inline-block;

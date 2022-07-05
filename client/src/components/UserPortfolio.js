@@ -15,6 +15,13 @@ const GridList = styled.div`
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 2;
+    background-color: #2e6171;
+    position: sticky;
+    max-width: 250px;
+    min-height: 700px;
+    margin-left: 20px;
+    border-left: 1px solid #220c10;
+    border-right: 1px solid #220c10;
 `
 
 const GridChart = styled.div`

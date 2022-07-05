@@ -3,19 +3,19 @@ import { Link } from "react-router-dom";
 import styled from 'styled-components' 
 
 const NavBarContainer = styled.nav`
-    color: white;
   text-align: left;
   background: #2E6171;
   width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #220c10;
+
   ul {
     color: #ffffff;
     display: flex;
     flex-direction: row;
-    border: 1px solid green;
     list-style: none;
     li {
-      padding: 15px 15px;
-      border: 2px #ffffff;
+        padding: 5px 5px;
     }
     a {
         color: #ffffff;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const ListColumn = styled.div`
     display: block;
-    margin: 0;
+    margin-top: 10px;
     padding: 5px;
     /* background-color: #2E6171; */
 `

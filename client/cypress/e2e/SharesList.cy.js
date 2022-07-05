@@ -13,5 +13,10 @@ describe('App', () => {
         const counter = cy.get('input');
         counter.should('contain', '');
     });
+
+    // it('Should have pre-populated share list', () => {
+    //     const SharesListItems = cy.get('#ShareList > li')
+    //     ShareListItems.should('have.length', 3)
+    // });
   
   });

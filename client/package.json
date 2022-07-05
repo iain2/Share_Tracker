@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchALL",
     "eject": "react-scripts eject",
     "test:e2e": "cypress open"
   },

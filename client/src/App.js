@@ -32,11 +32,7 @@ function App() {
     // fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${stockSymbol}&apikey=HJLCHFKGONF4JPE9`)
     //   .then(res => res.json())
     //   .then(data => setStock(data));
-<<<<<<< HEAD
-    fetch(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${searchStock}&apikey=HJLCHFKGONF4JPE9`)
-=======
     fetch(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${searchStock}&apikey=7IP39XV5WY90WNFY`)
->>>>>>> 87842b3c81c68a8b5b56bff0858d059ae9849598
       .then(res => res.json())
       .then(data => setSearchedStockList(data.bestMatches))
 

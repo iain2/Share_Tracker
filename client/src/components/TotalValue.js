@@ -1,5 +1,5 @@
 import React from "react";
-
+import styled from "styled-components";
 
 const TotalValue = ({ stock }) => {
 
@@ -13,16 +13,11 @@ const TotalValue = ({ stock }) => {
     const roundedPercentage = percentageDifference.toFixed(2);
     // const roundedStockPrice = stockDay1.toFixed(2);
 
-
-
-
-
-
     return (
         <>
-            <p>Symbol: {stock["Meta Data"]["2. Symbol"]}</p>
-            <p>Value: ${stockDay1}</p>
-            <p>Change: {roundedPercentage}%</p>
+            <h3>Symbol: {stock["Meta Data"]["2. Symbol"]}</h3>
+            <h3>Value: ${stockDay1}</h3>
+            <h3>Change: {roundedPercentage}%</h3>
         </>
     );
 };

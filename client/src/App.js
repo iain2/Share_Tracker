@@ -30,7 +30,7 @@ function App() {
     getPortfolio().then((allStocks) => {
       setPortfolio(allStocks);
     });
-    fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${stockSymbol}&interval=5min&apikey=IOETLV12N9IIMNFD`)
+    fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${stockSymbol}&apikey=7IP39XV5WY90WNFY`)
       .then(res => res.json())
       .then(data => setStock(data));
     fetch(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${searchStock}&apikey=IOETLV12N9IIMNFD`)

@@ -29,9 +29,9 @@ function App() {
     getPortfolio().then((allStocks) => {
       setPortfolio(allStocks);
     });
-    fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${stockSymbol}&apikey=HJLCHFKGONF4JPE9`)
-      .then(res => res.json())
-      .then(data => setStock(data));
+    // fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${stockSymbol}&apikey=HJLCHFKGONF4JPE9`)
+    //   .then(res => res.json())
+    //   .then(data => setStock(data));
     fetch(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${searchStock}&apikey=HJLCHFKGONF4JPE9`)
       .then(res => res.json())
       .then(data => setSearchedStockList(data.bestMatches))

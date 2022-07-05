@@ -2,6 +2,13 @@ import React from "react";
 import SearchResultItem from "./SearchResultsItem";
 import styled from "styled-components";
 
+const Results = styled.div`
+    background-color: #2E6171;
+    color: #FFFFFF;
+    border: 2px solid #220C10;
+    margin-top: 5px;
+`
+
 const SearchResultsList = ({ searchedStockList }) => {
 
     const searchResultNodes = searchedStockList.map((stock) => {
@@ -10,9 +17,9 @@ const SearchResultsList = ({ searchedStockList }) => {
 
 
     return (
-        <>
+        <Results>
             {searchResultNodes}
-        </>
+        </Results>
     )
 }
 

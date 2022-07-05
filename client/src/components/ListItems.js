@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const ListColumn = styled.div`
     display: block;
-    padding-left: 20px;
     padding: 5px;
 `
 

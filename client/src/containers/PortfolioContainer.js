@@ -3,13 +3,6 @@ import ShareList from "../components/ShareList";
 import TotalValue from "../components/TotalValue";
 import ShareChart from "../components/ShareChart";
 
-<<<<<<< HEAD
-const PortfolioContainer = ({ portfolio, getSymbol, stock }) => {
-
-    return (
-        <>
-            <UserPortfolio portfolio={portfolio} getSymbol={getSymbol} />
-=======
 import styled from "styled-components";
 
 const GridContainer = styled.div`
@@ -67,15 +60,10 @@ const UserPortfolio = ({ portfolio, getSymbol, stock }) => {
                 <TotalValue stock={stock} />
 
             </GridTotal>
->>>>>>> 87842b3c81c68a8b5b56bff0858d059ae9849598
 
 
         </GridContainer>
     )
 };
 
-<<<<<<< HEAD
-export default PortfolioContainer
-=======
 export default UserPortfolio;
->>>>>>> 87842b3c81c68a8b5b56bff0858d059ae9849598

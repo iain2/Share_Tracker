@@ -12,13 +12,17 @@ const Button = styled.button`
   background-color: transparent;
   border: none;
   color: white;
-  /* padding: 10px 20px; */
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  min-width: 200px;
 
-  &:hover{cursor: pointer;}
+  &:hover{
+    cursor: pointer;
+    background-color: #798086;
+  }
 `
 
 const ListItem = ({ stock, getSymbol }) => {

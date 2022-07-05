@@ -3,9 +3,9 @@ import React from "react";
 
 const TotalValue = ({ stock }) => {
 
-    // const lastRefresh = stock["Meta Data"]["3. Last Refreshed"]
+    const lastRefresh = stock["Meta Data"]["3. Last Refreshed"]
 
-    const stockDay1 = stock["Time Series (Daily)"]["2022-07-01"]["2. high"]
+    const stockDay1 = stock["Time Series (Daily)"][lastRefresh]["2. high"]
     const stockDay2 = stock["Time Series (Daily)"]["2022-06-30"]["2. high"]
 
     const stockDifference = stockDay1 - stockDay2;

@@ -36,8 +36,8 @@ const SearchBar = ({ searchSymbol }) => {
 
     return (
         <SearchBarContainer>
-            <form id="search-form" onSubmit={handleSubmit}>
-                <input onChange={handleChange} type="text" id="name" name="name" placeholder="Search..." required />
+            <form data-testid="submit" id="search-form" onSubmit={handleSubmit}>
+                <input data-testid="input" onChange={handleChange} type="text" id="name" name="name" placeholder="Search..." required />
                 <Input type='submit' value="Search" id="save" />
             </form>
         </SearchBarContainer>

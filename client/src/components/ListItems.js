@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-<<<<<<< HEAD
-=======
 const ListColumn = styled.div`
     display: block;
     margin: 5px;
@@ -27,7 +25,6 @@ const Button = styled.button`
   }
 `
 
->>>>>>> 87842b3c81c68a8b5b56bff0858d059ae9849598
 const ListItem = ({ stock, getSymbol }) => {
 
     const handleClick = (event) => {

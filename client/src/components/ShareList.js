@@ -17,14 +17,7 @@ const ShareList = ({ portfolio, getSymbol }) => {
     return (
 
         <ListColumn>
-<<<<<<< HEAD
-            <p>{portfolioNodes}</p>
-=======
             {portfolioNodes}
-
-
-
->>>>>>> 87842b3c81c68a8b5b56bff0858d059ae9849598
         </ListColumn>
     )
 };

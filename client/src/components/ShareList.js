@@ -4,6 +4,8 @@ import styled from "styled-components";
 
 const ListColumn = styled.div`
     display: block;
+    margin-top: -10px;
+    padding-left: 10px;
 `
 
 const ShareList = ({ portfolio, getSymbol }) => {

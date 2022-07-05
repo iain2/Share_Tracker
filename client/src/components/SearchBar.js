@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 const SearchBarContainer = styled.div`
-    color: #220C10;
     margin: 10px;
     padding: 5px;
 `
@@ -14,7 +13,9 @@ const Input = styled.input`
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 13px;
+  font-size: 15px;
+  
+  &:hover{cursor: pointer;}
 `
 
 const SearchBar = ({ searchSymbol }) => {
@@ -36,7 +37,7 @@ const SearchBar = ({ searchSymbol }) => {
     return (
         <SearchBarContainer>
             <form id="search-form" onSubmit={handleSubmit}>
-                <input onChange={handleChange} type="text" id="name" name="name" required />
+                <input onChange={handleChange} type="text" id="name" name="name" placeholder="Search..." required />
                 <Input type='submit' value="Search" id="save" />
             </form>
         </SearchBarContainer>

@@ -40,6 +40,10 @@ const GridTotal = styled.div`
 
 const UserPortfolio = ({ portfolio, getSymbol, stock }) => {
 
+    const errorMessage = {
+        "Note": "Thank you for using Alpha Vantage! Our standard API call frequency is 5 calls per minute and 500 calls per day. Please visit https://www.alphavantage.co/premium/ if you would like to target a higher API call frequency."
+    }
+
 
     return (
         <GridContainer>
@@ -50,7 +54,8 @@ const UserPortfolio = ({ portfolio, getSymbol, stock }) => {
                 <ShareChart />
             </GridChart>
             <GridTotal>
-                {stock ? <TotalValue stock={stock} /> : <p>loading</p>}
+                <TotalValue stock={stock} />
+
             </GridTotal>
         </GridContainer>
     )

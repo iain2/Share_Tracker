@@ -23,9 +23,7 @@ function App() {
   const [searchStock, setSearchStock] = useState('aapl');
   const [searchedStockList, setSearchedStockList] = useState([])
 
-  const getStock = () => {
-    return
-  }
+
 
   useEffect(() => {
     getPortfolio().then((allStocks) => {
@@ -52,17 +50,17 @@ function App() {
 
   return (
     <>
-    <Router>
-      <NavBar />
-      <Routes>
+      <Router>
+        <NavBar />
+        <Routes>
 
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/user" element={< PortfolioContainer portfolio={portfolio} getSymbol={getSymbol} stock={stock} />} />
-        <Route path="/shares" element={< SharesContainer searchSymbol={searchSymbol} searchedStockList={searchedStockList} />} />
-        
-      </Routes>
-    </Router>
-    <FooterBar/>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/user" element={< PortfolioContainer portfolio={portfolio} getSymbol={getSymbol} stock={stock} />} />
+          <Route path="/shares" element={< SharesContainer searchSymbol={searchSymbol} searchedStockList={searchedStockList} />} />
+
+        </Routes>
+      </Router>
+      <FooterBar />
     </>
 
   );

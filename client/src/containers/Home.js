@@ -25,7 +25,7 @@ function Home() {
     const [dadJoke, setDadJoke] = useState("");
 
     const fetchJoke =  function(){
-      fetch("https://v2.jokeapi.dev/joke/Any?type=single")
+      fetch("https://v2.jokeapi.dev/joke/Any?blacklistFlags=religious,political,racist,sexist,explicit&type=single")
       .then(response => response.json())
       .then(data => setDadJoke(data.joke))
     }

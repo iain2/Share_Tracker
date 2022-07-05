@@ -3,8 +3,9 @@ import ListItem from "./ListItems";
 import styled from "styled-components";
 
 const ListColumn = styled.div`
-    display: flex;
-    flex-direction: column;
+    display: block;
+    margin-top: -10px;
+    padding-left: 10px;
 `
 
 const ShareList = ({ portfolio, getSymbol }) => {
@@ -16,7 +17,14 @@ const ShareList = ({ portfolio, getSymbol }) => {
     return (
 
         <ListColumn>
+<<<<<<< HEAD
             <p>{portfolioNodes}</p>
+=======
+            {portfolioNodes}
+
+
+
+>>>>>>> 87842b3c81c68a8b5b56bff0858d059ae9849598
         </ListColumn>
     )
 };

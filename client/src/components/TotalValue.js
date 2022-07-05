@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import '../App.css';
 
 const TotalValue = ({ stock }) => {
 
@@ -17,7 +17,7 @@ const TotalValue = ({ stock }) => {
         <>
             <h3>Symbol: {stock["Meta Data"]["2. Symbol"]}</h3>
             <h3>Value: ${stockDay1}</h3>
-            <h3>Change: {roundedPercentage}%</h3>
+            <h3 className={roundedPercentage<0 ?"negative": "positive"}> Change: {roundedPercentage}%</h3>
         </>
     );
 };

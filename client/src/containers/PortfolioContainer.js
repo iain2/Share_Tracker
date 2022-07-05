@@ -13,7 +13,7 @@ const PortfolioContainer = ({ portfolio, getSymbol, stock }) => {
         <>
 
 
-            <UserPortfolio portfolio={portfolio} getSymbol={getSymbol} />
+            <UserPortfolio portfolio={portfolio} getSymbol={getSymbol} stock={stock} />
 
         </>
     )

@@ -38,20 +38,20 @@ const GridTotal = styled.div`
     grid-row-end: 2;
 `
 
-const UserPortfolio = ({ portfolio, getSymbol }) => {
+const UserPortfolio = ({ portfolio, getSymbol, stock }) => {
 
 
     return (
         <GridContainer>
-                <GridList>
-                    <ShareList portfolio={portfolio} getSymbol={getSymbol} />
-                </GridList>
-                <GridChart>
-                    <ShareChart />
-                </GridChart>
-                <GridTotal>
-                    <TotalValue />
-                </GridTotal>
+            <GridList>
+                <ShareList portfolio={portfolio} getSymbol={getSymbol} />
+            </GridList>
+            <GridChart>
+                <ShareChart />
+            </GridChart>
+            <GridTotal>
+                {stock ? <TotalValue stock={stock} /> : <p>loading</p>}
+            </GridTotal>
         </GridContainer>
     )
 };

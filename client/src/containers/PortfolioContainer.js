@@ -2,13 +2,13 @@ import React from "react";
 import ShareList from "../components/ShareList";
 import TotalValue from "../components/TotalValue";
 import ShareChart from "../components/ShareChart";
-import News from "../components/News";
+
 import styled from "styled-components";
 
 const GridContainer = styled.div`
     display: grid;
     grid-template-columns: 30% 70%;
-    grid-template-rows: 50% 20% 30%;
+    grid-template-rows: 50% 20%;
 `
 
 const GridList = styled.div`
@@ -39,12 +39,7 @@ const GridTotal = styled.div`
     grid-row-end: 2;
 `
 
-const GridNews = styled.div`
-grid-column-start: 2;
-grid-column-end: 3;
-grid-row-start: 3;
-grid-row-end: 3;
-`
+
 
 const UserPortfolio = ({ portfolio, getSymbol, stock }) => {
 
@@ -65,9 +60,7 @@ const UserPortfolio = ({ portfolio, getSymbol, stock }) => {
                 <TotalValue stock={stock} />
 
             </GridTotal>
-            <GridNews>
-                <News />
-            </GridNews>
+
 
         </GridContainer>
     )

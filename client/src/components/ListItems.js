@@ -3,7 +3,9 @@ import styled from "styled-components";
 
 const ListColumn = styled.div`
     display: block;
+    margin: 0;
     padding: 5px;
+    /* background-color: #2E6171; */
 `
 
 const Button = styled.button`
@@ -15,6 +17,8 @@ const Button = styled.button`
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+
+  &:hover{cursor: pointer;}
 `
 
 const ListItem = ({ stock, getSymbol }) => {

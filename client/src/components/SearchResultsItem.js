@@ -4,7 +4,7 @@ import { postPortfolio } from "../PortfolioService";
 
 const Results = styled.div`
     padding: 10px;
-    border: 5px solid #FFFF;
+    border-bottom: 1px solid #ffffff;
 `
 
 const Button = styled.button`
@@ -16,6 +16,8 @@ const Button = styled.button`
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
+
+  &:hover{cursor: pointer;}
 `
 
 

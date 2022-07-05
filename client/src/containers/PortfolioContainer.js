@@ -2,12 +2,13 @@ import React from "react";
 import ShareList from "../components/ShareList";
 import TotalValue from "../components/TotalValue";
 import ShareChart from "../components/ShareChart";
+
 import styled from "styled-components";
 
 const GridContainer = styled.div`
     display: grid;
     grid-template-columns: 30% 70%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 50% 20%;
 `
 
 const GridList = styled.div`
@@ -38,6 +39,8 @@ const GridTotal = styled.div`
     grid-row-end: 2;
 `
 
+
+
 const UserPortfolio = ({ portfolio, getSymbol, stock }) => {
 
     const errorMessage = {
@@ -57,6 +60,8 @@ const UserPortfolio = ({ portfolio, getSymbol, stock }) => {
                 <TotalValue stock={stock} />
 
             </GridTotal>
+
+
         </GridContainer>
     )
 };

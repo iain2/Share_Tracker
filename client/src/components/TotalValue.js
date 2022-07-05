@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 
 const TotalValue = ({ stock }) => {
@@ -20,7 +20,7 @@ const TotalValue = ({ stock }) => {
     return (
         <>
             <p>Symbol: {stock["Meta Data"]["2. Symbol"]}</p>
-            <p>Value: {stock["Time Series (Daily)"][lastRefresh]["2. high"]}</p>
+            <p>Value: ${stockDay1}</p>
             <p>Change: {roundedPercentage}%</p>
         </>
     );

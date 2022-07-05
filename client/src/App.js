@@ -1,4 +1,3 @@
-
 import './App.css';
 import React, { useState, useEffect } from "react";
 import PortfolioContainer from './containers/PortfolioContainer';
@@ -54,6 +53,19 @@ function App() {
 
   return (
     <>
+<<<<<<< HEAD
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element={< PortfolioContainer portfolio={portfolio} getSymbol={getSymbol} stock={stock} />} />
+        <Route path="/shares" element={< SharesContainer />} />
+      </Routes>
+    </Router>
+    <div className="App">
+    <Chart stock={stock}/>
+    </div>
+    </>
+=======
       <Router>
         <NavBar />
         <Routes>
@@ -67,6 +79,7 @@ function App() {
       <FooterBar />
     </>
 
+>>>>>>> 87842b3c81c68a8b5b56bff0858d059ae9849598
   );
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styled from 'styled-components' 
+import styled from 'styled-components'
 
 const NavBarContainer = styled.nav`
   text-align: left;
@@ -32,17 +32,17 @@ const NavBar = () => {
 
     return (
         <NavBarContainer>
-        <ul>
-            <li>
-                <Link to="/">Home</Link>
-            </li>
-            <li>
-                <Link to='/user'>User</Link>
-            </li>
-            <li>
-                <Link to="/shares">Shares</Link>
-            </li>
-        </ul>
+            <ul>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to='/portfolio'>Portfolio</Link>
+                </li>
+                <li>
+                    <Link to="/shares">Shares</Link>
+                </li>
+            </ul>
         </NavBarContainer>
     )
 };

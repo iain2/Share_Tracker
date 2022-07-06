@@ -28,12 +28,12 @@ function App() {
     getPortfolio().then((allStocks) => {
       setPortfolio(allStocks);
     });
-    fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${stockSymbol}&apikey=HJLCHFKGONF4JPE9`)
-      .then(res => res.json())
-      .then(data => setStock(data));
-    fetch(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${searchStock}&apikey=7IP39XV5WY90WNFY`)
-      .then(res => res.json())
-      .then(data => setSearchedStockList(data.bestMatches))
+    // fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${stockSymbol}&apikey=HJLCHFKGONF4JPE9`)
+    //   .then(res => res.json())
+    //   .then(data => setStock(data));
+    // fetch(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${searchStock}&apikey=7IP39XV5WY90WNFY`)
+    //   .then(res => res.json())
+    //   .then(data => setSearchedStockList(data.bestMatches))
 
   }, [stockSymbol, searchStock])
 
@@ -54,7 +54,7 @@ function App() {
         <Routes>
 
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/user" element={< PortfolioContainer portfolio={portfolio} getSymbol={getSymbol} stock={stock} />} />
+          <Route exact path="/portfolio" element={< PortfolioContainer portfolio={portfolio} getSymbol={getSymbol} stock={stock} />} />
           <Route path="/shares" element={< SharesContainer searchSymbol={searchSymbol} searchedStockList={searchedStockList} />} />
 
         </Routes>

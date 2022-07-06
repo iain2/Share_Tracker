@@ -33,6 +33,8 @@ const GridChart = styled.div`
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
+    align-items: center;
+    margin-right: 100px;
 `
 
 const GridTotal = styled.div`
@@ -40,6 +42,7 @@ const GridTotal = styled.div`
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 2;
+    margin-right: 100px;
 `
 
 const UserPortfolio = ({ portfolio, getSymbol, stock }) => {

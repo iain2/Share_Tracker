@@ -15,5 +15,4 @@ const SharesContainer = ({ searchSymbol, searchedStockList }) => {
     )
 };
 
-
-export default SharesContainer
+export default SharesContainer;

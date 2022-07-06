@@ -2,7 +2,6 @@ import React, {components, useState, useEffect} from "react";
 import * as Highcharts from 'highcharts/highstock';
 import HighchartsReact from 'highcharts-react-official';
 
-
 const ShareChart = () => {
 
     var processedData = [];
@@ -115,6 +114,5 @@ const ShareChart = () => {
 //             </>
 //         );
 //     };
-
 
 export default ShareChart;

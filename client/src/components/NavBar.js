@@ -23,9 +23,7 @@ const NavBarContainer = styled.nav`
     }
 }
 `
-
 const NavBar = () => {
-
 
     return (
         <NavBarContainer>
@@ -43,6 +41,5 @@ const NavBar = () => {
         </NavBarContainer>
     )
 };
-
 
 export default NavBar

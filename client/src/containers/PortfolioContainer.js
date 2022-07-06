@@ -9,6 +9,8 @@ const GridContainer = styled.div`
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: 50% 20%;
+    width: 100vw;
+    height: 100vh
 `
 
 const GridList = styled.div`
@@ -19,7 +21,7 @@ const GridList = styled.div`
     background-color: #2e6171;
     position: sticky;
     max-width: 250px;
-    min-height: 700px;
+    min-height: 100vh;
     margin-left: 20px;
     border-left: 1px solid #220c10;
     border-right: 1px solid #220c10;
@@ -39,8 +41,6 @@ const GridTotal = styled.div`
     grid-row-end: 2;
 `
 
-
-
 const UserPortfolio = ({ portfolio, getSymbol, stock }) => {
 
     const errorMessage = {
@@ -58,10 +58,7 @@ const UserPortfolio = ({ portfolio, getSymbol, stock }) => {
             </GridChart>
             <GridTotal>
                 <TotalValue stock={stock} />
-
             </GridTotal>
-
-
         </GridContainer>
     )
 };

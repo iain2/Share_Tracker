@@ -7,18 +7,6 @@ const SearchBarContainer = styled.div`
     padding: 5px;
 `
 
-const Input = styled.input`
-  background-color: #2E6171;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  
-  &:hover{cursor: pointer;}
-`
-
 const SearchBar = ({ searchSymbol }) => {
 
     const [symbol, setSymbol] = useState("")
@@ -47,4 +35,4 @@ const SearchBar = ({ searchSymbol }) => {
     )
 }
 
-export default SearchBar
+export default SearchBar;

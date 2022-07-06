@@ -18,6 +18,7 @@ const Button = styled.button`
   display: inline-block;
   font-size: 16px;
   min-width: 200px;
+  border-radius: 5px;
 
   &:hover{
     cursor: pointer;

@@ -16,6 +16,7 @@ const Button = styled.button`
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
+  border-radius: 5px;
 
   &:hover{
     cursor: pointer;
@@ -60,4 +61,4 @@ const SearchResultItem = ({ stock }) => {
 
 }
 
-export default SearchResultItem
+export default SearchResultItem;

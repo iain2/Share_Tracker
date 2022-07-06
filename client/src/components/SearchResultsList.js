@@ -5,6 +5,8 @@ import styled from "styled-components";
 const Results = styled.div`
     background-color: #2E6171;
     color: #FFFFFF;
+    margin: 10px;
+    border-radius: 5px;
 `
 
 const SearchResultsList = ({ searchedStockList }) => {

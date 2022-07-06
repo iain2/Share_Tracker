@@ -15,7 +15,7 @@ const NavBarContainer = styled.nav`
     flex-direction: row;
     list-style: none;
     li {
-        padding: 5px 10px;
+        padding: 10px 10px;
     }
     a {
         color: #ffffff;
@@ -25,6 +25,7 @@ const NavBarContainer = styled.nav`
         background-color: #798086;
         color: #220c10;
         padding: 5px;
+        border-radius: 5px;
     }
 }
 `
@@ -47,4 +48,4 @@ const NavBar = () => {
     )
 };
 
-export default NavBar
+export default NavBar;

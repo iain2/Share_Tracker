@@ -8,7 +8,18 @@ const ValueStyled = styled.div`
     align-items: center;
     padding: 5px;
     margin: 5px;
-    border: 1px solid #220c10;
+`
+
+const Button = styled.div`
+    background-color: #ffffff;
+    border: none;
+    color: #220c10;
+    padding: 2px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
 `
 
 const TotalValue = ({ stock }) => {
@@ -25,9 +36,9 @@ const TotalValue = ({ stock }) => {
 
     return (
         <ValueStyled>
-            <p><b>Symbol:</b> {stock["Meta Data"]["2. Symbol"]}</p>
-            <p><b>Value:</b> ${stockDay1}</p>
-            <p className={roundedPercentage<0 ?"negative": "positive"}> <b> Change: {roundedPercentage}% </b></p>
+            <Button> <p><b>Symbol:</b> {stock["Meta Data"]["2. Symbol"]}</p></Button>
+            <Button> <p><b>Value:</b> ${stockDay1}</p> </Button>
+            <Button><p className={roundedPercentage<0 ?"negative": "positive"}> <b> Change: {roundedPercentage}% </b></p> </Button> 
         </ValueStyled>
     );
 };

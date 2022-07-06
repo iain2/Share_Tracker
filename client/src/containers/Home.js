@@ -3,25 +3,31 @@ import styled from "styled-components";
 
 const JokeContainer = styled.div`
     width: 300px;
-    height: 300px;
+    height: fit-content;
     margin: auto;
     align-items: center;
+    background-color: #2e6171;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-top: 120px;
+    color: #ffffff;
 `
 
 const Button = styled.button`
-  background-color: #2e6171;
+  background-color: #798086;
   border: none;
-  color: #ffffff;
+  color: #220c10;
   padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
+  border-radius: 5px;
 
   &:hover{
     cursor: pointer;
-    color: #220c10;
-    background-color: #798086;
+    color: #798086;
+    background-color: #220c10;
     }
 `
 

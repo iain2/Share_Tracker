@@ -1,9 +1,10 @@
 import React from "react";
 import ShareList from "../components/ShareList";
 import TotalValue from "../components/TotalValue";
-import ShareChart from "../components/ShareChart";
+import ChartItem from "../components/ShareChart";
 
 import styled from "styled-components";
+
 
 const GridContainer = styled.div`
     display: grid;
@@ -54,7 +55,7 @@ const UserPortfolio = ({ portfolio, getSymbol, stock }) => {
                 <ShareList portfolio={portfolio} getSymbol={getSymbol} />
             </GridList>
             <GridChart>
-                <ShareChart />
+                <ChartItem stock={stock} />
             </GridChart>
             <GridTotal>
                 <TotalValue stock={stock} />

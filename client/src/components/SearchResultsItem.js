@@ -17,7 +17,11 @@ const Button = styled.button`
   display: inline-block;
   font-size: 14px;
 
-  &:hover{cursor: pointer;}
+  &:hover{
+    cursor: pointer;
+    color: #798086;
+    background-color: #220c10;
+    }
 `
 
 

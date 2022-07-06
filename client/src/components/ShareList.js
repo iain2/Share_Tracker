@@ -14,14 +14,10 @@ const ShareList = ({ portfolio, getSymbol }) => {
         return <ListItem stock={stock} key={stock._id} getSymbol={getSymbol} />
     })
 
-
     return (
 
         <ListColumn>
             {portfolioNodes}
-
-
-
         </ListColumn>
     )
 };

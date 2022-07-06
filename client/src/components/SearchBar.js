@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import '../App.css';
 
 const SearchBarContainer = styled.div`
     margin: 10px;
@@ -36,9 +37,11 @@ const SearchBar = ({ searchSymbol }) => {
 
     return (
         <SearchBarContainer>
-            <form data-testid="submit" id="search-form" onSubmit={handleSubmit}>
-                <input data-testid="input" onChange={handleChange} type="text" id="name" name="name" placeholder="Search..." required />
-                <Input type='submit' value="Search" id="save" />
+            <form className="search" id="search-form" onSubmit={handleSubmit}>
+                <input className="searchTerm" onChange={handleChange} type="text" id="name" name="name" placeholder="Search..." required />
+                <button type="submit" class="searchButton">
+                    <i class="gg-search"></i>
+                </button>
             </form>
         </SearchBarContainer>
     )

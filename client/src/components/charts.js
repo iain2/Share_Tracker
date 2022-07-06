@@ -1,7 +1,6 @@
 import { Chart } from "react-google-charts";
 import React, { useEffect, useState } from "react";
 
-
 export const data = [
   ["Task", "Price"],
   ["Work", 11],

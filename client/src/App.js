@@ -1,4 +1,3 @@
-
 import './App.css';
 import React, { useState, useEffect } from "react";
 import PortfolioContainer from './containers/PortfolioContainer';
@@ -23,18 +22,16 @@ function App() {
   const [searchStock, setSearchStock] = useState('aapl');
   const [searchedStockList, setSearchedStockList] = useState([])
 
-  const getStock = () => {
-    return
-  }
+
 
   useEffect(() => {
     getPortfolio().then((allStocks) => {
       setPortfolio(allStocks);
     });
-    fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${stockSymbol}&interval=5min&apikey=IOETLV12N9IIMNFD`)
+    fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${stockSymbol}&apikey=HJLCHFKGONF4JPE9`)
       .then(res => res.json())
       .then(data => setStock(data));
-    fetch(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${searchStock}&apikey=IOETLV12N9IIMNFD`)
+    fetch(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${searchStock}&apikey=7IP39XV5WY90WNFY`)
       .then(res => res.json())
       .then(data => setSearchedStockList(data.bestMatches))
 
@@ -52,17 +49,17 @@ function App() {
 
   return (
     <>
-    <Router>
-      <NavBar />
-      <Routes>
+      <Router>
+        <NavBar />
+        <Routes>
 
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/user" element={< PortfolioContainer portfolio={portfolio} getSymbol={getSymbol} stock={stock} />} />
-        <Route path="/shares" element={< SharesContainer searchSymbol={searchSymbol} searchedStockList={searchedStockList} />} />
-        
-      </Routes>
-    </Router>
-    <FooterBar/>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/user" element={< PortfolioContainer portfolio={portfolio} getSymbol={getSymbol} stock={stock} />} />
+          <Route path="/shares" element={< SharesContainer searchSymbol={searchSymbol} searchedStockList={searchedStockList} />} />
+
+        </Routes>
+      </Router>
+      <FooterBar />
     </>
 
   );

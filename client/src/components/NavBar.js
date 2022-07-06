@@ -21,11 +21,14 @@ const NavBarContainer = styled.nav`
         color: #ffffff;
         text-decoration: none;
     }
+    a:hover {
+        background-color: #798086;
+        color: #220c10;
+        padding: 5px;
+    }
 }
 `
-
 const NavBar = () => {
-
 
     return (
         <NavBarContainer>
@@ -43,6 +46,5 @@ const NavBar = () => {
         </NavBarContainer>
     )
 };
-
 
 export default NavBar

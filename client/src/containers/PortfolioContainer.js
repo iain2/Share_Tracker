@@ -58,10 +58,7 @@ const UserPortfolio = ({ portfolio, getSymbol, stock }) => {
             </GridChart>
             <GridTotal>
                 <TotalValue stock={stock} />
-
             </GridTotal>
-
-
         </GridContainer>
     )
 };

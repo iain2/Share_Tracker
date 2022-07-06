@@ -8,6 +8,10 @@ body {
   color: red
 }
 
+.positive {
+  color: green;
+}
+
 .search {
   width: 100%;
   position: relative;

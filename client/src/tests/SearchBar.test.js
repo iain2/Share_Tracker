@@ -12,4 +12,4 @@ describe("SearchBar", () => {
       searchH1 = container.getByTestId("input")
     });
 
-})
+});

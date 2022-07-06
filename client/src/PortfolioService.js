@@ -34,7 +34,7 @@ export const updatePortfolio = (booking) => {
 export const dummyData = {
     "Meta Data": {
         "1. Information": "Daily Prices (open, high, low, close) and Volumes",
-        "2. Symbol": "ibm",
+        "2. Symbol": "IBM",
         "3. Last Refreshed": "2022-07-05",
         "4. Output Size": "Compact",
         "5. Time Zone": "US/Eastern"

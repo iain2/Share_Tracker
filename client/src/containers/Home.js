@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const JokeContainer = styled.div`
-    overflow: hidden;
     width: 300px;
+    height: 300px;
     margin: auto;
+    align-items: center;
 `
 
 const Button = styled.button`

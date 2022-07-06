@@ -2,6 +2,8 @@
 
 NPM install
 
+NPM update
+
 cd server
 
 NPM run seeds 

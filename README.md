@@ -1,5 +1,7 @@
 # Share_Tracker
 
+# Set-Up
+
 NPM install
 
 NPM update
@@ -16,4 +18,4 @@ NPM start
 
 
 comment out the fetch requests if the app doesnt run, API has a limit of 5 calls/min
-# Share_Tracker
+

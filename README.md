@@ -1,10 +1,10 @@
 # Share_Tracker
 
-# Description
+## Description
 
 React app that allows a user to enter shares from their portfolio and see the share price graphed over time, the search bar allows the user to look up new shares to add to the tracker. 
 
-# Instructions
+## Instructions
 
 ![image](https://user-images.githubusercontent.com/102697747/206188041-987c5efe-3c5a-4f15-bb1f-de63f069b938.png)
 
@@ -16,8 +16,11 @@ The main page show the list of shares saved in the portfolio down the left hand 
 On the share page, shares can be searched for using the search bar and the mathching shares are listed below 
 
 
-# Set-Up
+## Set-Up
 
+in the main folder 
+
+```
 NPM install
 
 NPM update
@@ -31,6 +34,8 @@ NPM run server:dev
 cd ../client 
 
 NPM start
+
+```
 
 
 comment out the fetch requests if the app doesnt run, API has a limit of 5 calls/min

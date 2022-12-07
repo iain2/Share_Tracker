@@ -54,5 +54,9 @@ comment out the fetch requests if the app doesnt run, API has a limit of 5 calls
 
 -[React]
 
+-[Express]
+
+-[MongoDB]
+
 
 

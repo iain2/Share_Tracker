@@ -20,21 +20,25 @@ On the share page, shares can be searched for using the search bar and the mathc
 
 in the main folder 
 
+### Install files 
 ```
 NPM install
 
 NPM update
-
+```
+### Set-up and Start Server
+```
 cd server
 
 NPM run seeds 
 
 NPM run server:dev
-
+```
+### Run App
+```
 cd ../client 
 
 NPM start
-
 ```
 
 

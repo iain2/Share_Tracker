@@ -18,7 +18,7 @@ On the share page, shares can be searched for using the search bar and the mathc
 
 ## Set-Up
 
-in the main folder 
+In the main folder 
 
 ### Install files 
 ```
@@ -26,7 +26,7 @@ NPM install
 
 NPM update
 ```
-### Set-up and Start Server
+### Set-up and start server
 ```
 cd server
 
@@ -34,7 +34,7 @@ NPM run seeds
 
 NPM run server:dev
 ```
-### Run App
+### Run app
 ```
 cd ../client 
 
